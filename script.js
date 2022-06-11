@@ -32,7 +32,7 @@ async function getWeather(){
         console.log(currentWeather.current.condition.text);
         weatherMessage.textContent = currentWeather.current.condition.text + ' ' + currentWeather.current.temp_c + 'C';
         
-        weatherIcon.setAttribute('src', `https:${currentWeather.current.condition.icon}`);
+        weatherIcon.setAttribute('src', `http:${currentWeather.current.condition.icon}`);
         weatherMessage.appendChild(weatherIcon);
     }
     catch{
