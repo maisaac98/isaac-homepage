@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6983d0754c.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Isaac's Homepage</title>
+</head>
+
+<body>
+    <div class="welcome" id="welcome">
+        <div class="current-time" id="current-time">
+            <div class="current-date" id="current-date">
+                Current Time
+            </div>
+        </div>
+        <!-- bigger font -->
+        <div class="welcome-message" id="welcome-message">
+            Good Morning Isaac!
+        </div>
+    </div>
+    <div id="circularMenu" class="circular-menu">
+        <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+            <i class="fa fa-plus"></i>
+        </a>
+        <menu class="items-wrapper">
+            <a href="#" class="menu-item fa fa-facebook"></a>
+            <a href="#" class="menu-item fa fa-twitter"></a>
+            <a href="#" class="menu-item fa fa-google-plus"></a>
+            <a href="#" class="menu-item fa fa-linkedin"></a>
+        </menu>
+    </div>
+
+    <div id="circularMenu1" class="circular-menu circular-menu-left active">
+        <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+            <i class="fa fa-bars"></i>
+        </a>
+        <menu class="items-wrapper">
+            <a href="#" class="menu-item fa fa-home">
+                <!-- portfolio page -->
+            </a>
+            <a target="_blank" href="https://calendar.google.com/calendar/u/0/r" class="menu-item fa-solid fa-calendar"></a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=gdZLi9oWNZg&list=PL-prqSaLgL-dAADk8AIhGOv-O2Ng1Lw87&index=1&ab_channel=HYBELABELS" class="menu-item fa-solid fa-headphones"></a></a>
+            <a href="#" class="menu-item fa fa-cog"></a>
+        </menu>
+    </div>
+</body>
+
+</html>
