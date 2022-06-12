@@ -26,7 +26,7 @@ setInterval(() =>{
 
 async function getWeather(){
     try{
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Sydney`);
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Sydney`);
         currentWeather = await response.json();
         console.log(currentWeather);
         console.log(currentWeather.current.condition.text);
